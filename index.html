@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arkaan Zachary Hermawan - Tugas 11 (Validation Form)</title>
+    <script src="validationform.js"></script>
+    <link rel="stylesheet" href="validationform.css" />
+    <link rel="icon" href="img/background.jpg" />
+  </head>
+  <body>
+    <h1>Formulir Validasi</h1>
+    <form id="myForm" onsubmit="return validationform()">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+      <span id="namaError" class="error"></span><br />
+
+      <label for="alamat">Alamat:</label>
+      <input type="text" id="alamat" name="alamat" required />
+      <span id="alamatError" class="error"></span><br />
+
+      <label for="noTelp">Nomor Telepon:</label>
+      <input type="text" id="noTelp" name="noTelp" required />
+      <span id="noTelpError" class="error"></span><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <span id="passwordError" class="error"></span><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
